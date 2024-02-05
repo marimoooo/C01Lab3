@@ -47,7 +47,6 @@ function App() {
         .then((response) => {
           if (!response.ok) {
             console.log("Delete failed:", response.status);
-            throw new Error("Delete failed");
           }
           return response.json();
         })
