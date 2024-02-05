@@ -67,7 +67,6 @@ function Dialog({open, initialNote, closeDialog, postNote: postNoteState, patchN
               .then((response) => {
                 if (!response.ok) {
                   console.log("Patch failed:", response.status);
-                  throw new Error("Patch failed");
                 }
                 return response.json();
               })
